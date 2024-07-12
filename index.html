@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo Pathfinding A*</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="principioX">Principio X:</label>
+        <input type="number" id="principioX" value="0" min="0" max="9">
+        <label for="principioY">Principio Y:</label>
+        <input type="number" id="principioY" value="0" min="0" max="9">
+        <button id="setPrincipio">Establecer Principio</button>
+    </div>
+    <div>
+        <label for="finX">Fin X:</label>
+        <input type="number" id="finX" value="9" min="0" max="9">
+        <label for="finY">Fin Y:</label>
+        <input type="number" id="finY" value="9" min="0" max="9">
+        <button id="setFin">Establecer Fin</button>
+    </div>
+    <div>
+        <label for="obstaculoX">Obstáculo X:</label>
+        <input type="number" id="obstaculoX" min="0" max="9">
+        <label for="obstaculoY">Obstáculo Y:</label>
+        <input type="number" id="obstaculoY" min="0" max="9">
+        <select id="tipoObstaculo">
+            <option value="1">Vivienda</option>
+            <option value="2">Agua</option>
+            <option value="3">Obstrucción</option>
+        </select>
+        <button id="setObstaculo">Agregar Obstáculo</button>
+    </div>
+    <button id="inicio">Iniciar Búsqueda</button>
+    <canvas id="escenarioCanvas" width="500" height="500"></canvas>
+    <script src="js/pathfinding.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
